@@ -1,0 +1,33 @@
+body {
+  /* CONTÉM O TAMANHO (ALTURA )DO ELEMENTO QUE ESTA CONTIDO DENTRO DELE */
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  align-items: center;
+  height: 100vh; /* VIEWPORT HEIGHT - DA JANELA QUE O USUARIO VÊ*/
+}
+
+.container {
+  background: white;
+  border: 3px solid red;
+  width: 640px;
+  height: 480px;
+
+  display: flex; /* APLICA PRA FILHOS DIRETOS APENAS */
+  align-items: center; /* VERTICAL - Y */
+  justify-content: center; /* HORIZONTAL - X */
+}
+
+.itens {
+  border: 2px solid orange;
+  width: 120px;
+  height: 120px;
+}
+
+.sub-item {
+  border: 1px solid green;
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 01 - Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cursos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Instrutores
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Por Curso</a></li>
+                <li><a class="dropdown-item" href="#">Por Nome</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Todos</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container invisible">
+      <h1>Aula 01</h1>
+
+      <p>Primeiro html com bootstrap</p>
+
+      <button class="btn btn-primary">Button</button>
+      <a href="#" class="btn btn-secondary">Button with ancor</a>
+    </div>
+    <hr />
+
+    <div class="container d-none">
+      <h1>Aula 02 - Parte 01</h1>
+
+      <p>Tabela com bootstrap</p>
+
+      <table class="table table-striped">
+        <thead>
+          <tr class="table-primary">
+            <th>Nome do Curso</th>
+            <th class="text-center">Carga Horária</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bootstrap 5</td>
+            <td class="text-center">12 Hrs</td>
+            <td class="text-end">
+              <button class="btn btn-primary">Detalhes</button>
+            </td>
+          </tr>
+          <tr>
+            <td>React JS</td>
+            <td class="text-center">40 Hrs</td>
+            <td class="text-end">
+              <button class="btn btn-primary">Detalhes</button>
+            </td>
+          </tr>
+          <tr>
+            <td>React native</td>
+            <td class="text-center">40 Hrs</td>
+            <td class="text-end">
+              <button class="btn btn-primary">Detalhes</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+
+    <div class="container d-none">
+      <h1>Aula 02 - Parte 02</h1>
+
+      <div class="alert alert-success">Operação concluída com sucesso!</div>
+      <div class="alert alert-danger">
+        <h4 class="alert-heading">Atenção:</h4>
+        <p>
+          <a href="#" class="alert-link"> Clique aqui</a> para visualizar os
+          erros
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <div class="container d-none">
+      <h1>Aula 03 - FORMS</h1>
+      <form action="">
+        <label for="username" class="form-label">Nome do usuário</label>
+        <input
+          id="username"
+          type="text"
+          class="form-control"
+          placeholder="Digite seu nome"
+        />
+        <div class="form-text">Neste campo irão informações</div>
+
+        <hr />
+
+        <input
+          type="text"
+          value="Tamanho Grande"
+          class="form-control form-control-lg"
+          disabled
+        />
+        <br />
+        <input
+          type="text"
+          value="Tamanho Normal"
+          class="form-control"
+          disabled
+        />
+        <br />
+        <input
+          type="text"
+          value="Tamanho Pequeno"
+          class="form-control form-control-sm"
+          disabled
+        />
+        <br />
+        <input type="file" name="" id="" class="form-control" />
+        <br />
+        <input type="color" class="form-control form-control-color" />
+        <br />
+        <select name="" id="" class="form-select">
+          <option value="SC">Santa Catarina</option>
+          <option value="PR">Paraná</option>
+          <option value="RS" selected>Rio Grande do Sul</option>
+        </select>
+        <br />
+        <div class="form-text">Selecione os cursos de seu interesse</div>
+        <input
+          checked
+          type="checkbox"
+          name=""
+          id="html-css-js"
+          class="form-check-input"
+          value="HTML, CSS e JS"
+        />
+        <label for="html-css-js">HTML, CSS e JS</label>
+        <br />
+        <input
+          checked
+          type="checkbox"
+          name=""
+          id="c#"
+          class="form-check-input"
+          value="C Sharp"
+        />
+        <label for="c#">C Sharp</label>
+
+        <br />
+        <br />
+        <p>Ligado / Desligado:</p>
+        <div class="form-check form-switch">
+          <input type="checkbox" name="" id="" class="form-check-input" />
+        </div>
+      </form>
+    </div>
+    <hr />
+
+    <div class="container d-none">
+      <h1>Aula 04</h1>
+
+      <form action="">
+        <div class="input-group">
+          <div class="input-group-text">$</div>
+          <input
+            type="text"
+            name="salario"
+            id=""
+            class="form-control"
+            placeholder="salário"
+          />
+        </div>
+
+        <br />
+
+        <div class="input-group">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="usuário"
+          />
+          <div class="input-group-text">@</div>
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="dominio"
+          />
+        </div>
+
+        <br />
+
+        <div class="input-group">
+          <div class="input-group-text">@</div>
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="usuário"
+          />
+          <button class="btn btn-primary">ENVIAR</button>
+        </div>
+      </form>
+
+      <hr />
+
+      <form action="">
+        <div class="form-floating">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="E-mail"
+          />
+          <label for="email"> E-mail </label>
+        </div>
+      </form>
+    </div>
+    <hr />
+
+    <div class="container d-none">
+
+      <h1>Aula 05 - Icones e Modais</h1>
+
+      <h1><i class="bi bi-cash"></i></h1>
+      <i class="bi bi-cash text-success"></i>
+      <hr />
+
+      <button class="btn btn-primary"
+       data-bs-toggle="modal"
+       data-bs-target="#modal-exemplo">
+       Abrir Modal
+      </button>
+
+      <div class="modal fade" id="modal-exemplo">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Título Modal</h5>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+          <div class="modal-body">
+            <p>Corpo do Modal</p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button class="btn btn-primary"><i class="bi bi-cloud"></i> Salvar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <h1>Aula 06 - Grids </h1>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-2 col bg-info">Coluna 1 </div>
+        <div class="col-lg-1 col-md-2 col bg-warning">Coluna 2 </div>
+        <div class="col-lg-1 col-md-6 col bg-success">Coluna 3 </div>
+        <div class="col-lg-2 col-md-2 col bg-danger">Coluna 4 </div>
+      </div>
+    </div>
+    <hr />
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
